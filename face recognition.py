@@ -67,18 +67,3 @@ videp_capture.release()
 cv2.destroyAllWindows()
 
 
-# def dist(x,y):
-#     return np.sqrt(((x-y)**2).sum())
-#
-# def Knn(train,test,k=5):
-#     dis = []
-#     for i in range(train.shape[0]):
-#         ix = train[i,:-1]
-#         iy = train[i,-1]
-#         d = dist(test,ix)
-#         dis.append([d,iy])
-#     dk = sorted(dis,key=lambda x:x[0])[:k]
-#     labels = np.array(dk)[:,-1]
-#     output = np.unique(labels,return_counts=True)
-#     index = np.argmax(output[1])
-#     return output[0][index]
